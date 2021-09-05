@@ -2,19 +2,6 @@ from datetime import datetime
 from tkinter import *
 from tkinter import ttk
 
-# init ui
-# root = Tk()
-# root.geometry("300x600")
-# root.resizable(width=False, height=False)
-# root.title('Tom')
-# canvas = Canvas(root)
-# scrollbar = Scrollbar(root, orient="vertical", command=canvas.yview)
-# frame = Frame(canvas)
-# canvas.configure(bg='#D3D3D3')  # light-default
-# entry = Entry(root)
-# btn = Button(root, text="send")
-
-
 def pack_widgets(entry,btn,canvas,scrollbar,frame):
     entry.pack(side=BOTTOM, fill=X)
     btn.pack(fill=X, side=BOTTOM)
@@ -84,12 +71,3 @@ def create_message_ui(canvas,msg,name,main_theme,chosen):
         classic_theme_dark(canvas,msg,name,main_theme)
     else:
         classic_theme_light(canvas,msg,name,main_theme)
-
-# pack_widgets()
-
-# light_theme()
-# dark_theme()
-# classic_theme_dark()
-# classic_theme_light()
-
-# root.mainloop()
